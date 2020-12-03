@@ -7,6 +7,7 @@ def part1():
             if i + j == 2020:
                 print(i*j)
 
+
 def part2():
     with open('day1.txt') as f:
         nums = [int(x) for x in f]
@@ -16,6 +17,7 @@ def part2():
             for loc3, k in enumerate(nums[loc2:]):
                 if i + j + k == 2020:
                     print(i * j * k)
+
 
 if __name__ == '__main__':
     part1()
