@@ -27,3 +27,4 @@ if __name__ == '__main__':
 
     print(part1(grid, 3, 1))
     print(part2(grid))
+    test
