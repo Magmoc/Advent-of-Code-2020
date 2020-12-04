@@ -1,16 +1,17 @@
 
 
 if __name__ == '__main__':
-    with open('test.txt') as f:
+    with open('passports.txt') as f:
         passports = [x.strip('\n') for x in f]
 
+    print(passports)
     old = 0
     new_passports = []
     for index, elem in enumerate(passports):
         if not elem or index == len(passports):
             new = ' '.join(passports[old:index])
             new_passports.append(new)
-            old = index+1
+            old = index
 
     print(new_passports)
     checklist = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
