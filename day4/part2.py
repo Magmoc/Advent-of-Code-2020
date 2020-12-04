@@ -1,5 +1,5 @@
-def year_check(year, length, min, max):
-    return len(year) == length and (min <= eval(year) <= max)
+def year_check(year, length, minval, maxval):
+    return len(year) == length and (minval <= eval(year) <= maxval)
 
 
 if __name__ == '__main__':
@@ -22,7 +22,6 @@ if __name__ == '__main__':
         if all(item in passport for item in checklist):
             valid_passwords.append(passport)
 
-    print(valid_passwords)
     dict_passport = {}
 
     for elem in valid_passwords:
@@ -36,7 +35,6 @@ if __name__ == '__main__':
             else:
                 dict_passport[key] = [value]
 
-    subcount = 0
     count = 0
 
     for i in range(len(valid_passwords)):
@@ -70,7 +68,7 @@ if __name__ == '__main__':
             subcount += 1
 
         pid = dict_passport['pid'][i]
-        if len(pid) == 9 and pid[0] == '0':
+        if len(pid) == 9:
             subcount += 1
 
         if subcount == 7:
