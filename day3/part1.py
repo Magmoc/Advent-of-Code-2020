@@ -18,3 +18,5 @@ if __name__ == '__main__':
         grid = [line.strip('\n') for line in f]
 
     print(count_trees(grid, 3, 1))
+
+# CORRECT!

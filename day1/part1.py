@@ -6,3 +6,5 @@ if __name__ == '__main__':
         for j in nums[loc:]:
             if i + j == 2020:
                 print(i*j)
+
+# CORRECT!

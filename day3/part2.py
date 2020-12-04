@@ -22,3 +22,5 @@ if __name__ == '__main__':
         ans *= count_trees(grid, elem[0], elem[1])
 
     print(ans)
+
+# CORRECT!
