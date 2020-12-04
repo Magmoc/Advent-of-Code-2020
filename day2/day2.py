@@ -8,7 +8,7 @@ def part1(passwords):
         if eval(x[0]) <= x[-1].count(x[-2]) <= eval(x[1]):
             realpasswords.append(x)
 
-    print(len(realpasswords))
+    return len(realpasswords)
 
 
 def part2(passwords):
@@ -20,7 +20,7 @@ def part2(passwords):
         if (string[low-1] == letter and string[up-1] != letter) or (string[low-1] != letter and string[up-1] == letter):
             realpasswords.append(x)
 
-    print(len(realpasswords))
+    return len(realpasswords)
 
 
 if __name__ == '__main__':
@@ -29,5 +29,5 @@ if __name__ == '__main__':
 
     passwords = [re.split('-| |: ', x.strip('\n')) for x in passwords]
 
-    part1(passwords)
-    part2(passwords)
+    print(part1(passwords))
+    print(part2(passwords))
