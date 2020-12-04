@@ -1,5 +1,4 @@
 
-
 if __name__ == '__main__':
     with open('passports.txt') as f:
         passports = [x.strip('\n') for x in f]
@@ -35,6 +34,7 @@ if __name__ == '__main__':
             else:
                 dict_passport[key] = [value]
 
-
+    for i in range(len(new_passports)):
+        pass
 
     print(dict_passport)
