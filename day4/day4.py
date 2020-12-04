@@ -1,17 +1,18 @@
 
 
 if __name__ == '__main__':
-    with open('passports.txt') as f:
+    with open('test.txt') as f:
         passports = [x.strip('\n') for x in f]
 
     old = 0
     new_passports = []
     for index, elem in enumerate(passports):
-        if not elem:
+        if not elem or index == len(passports):
             new = ' '.join(passports[old:index])
             new_passports.append(new)
             old = index+1
 
+    print(new_passports)
     checklist = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
 
     count = 0
@@ -19,11 +20,8 @@ if __name__ == '__main__':
     for idx, passport in enumerate(new_passports):
         if all(item in passport for item in checklist):
             count += 1
-        else:
-            invalid += 1
-            print("INDEX: ", idx)
-            print(passport)
+
        # print('cid' in passport, passport.count(':'), all(item in passport for item in checklist))
 
     print(len(new_passports))
-    print(count, invalid)
+    print(count)
