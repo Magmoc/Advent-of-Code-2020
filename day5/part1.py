@@ -13,7 +13,7 @@ def find_val(string, lower, upper, lower_str, upper_str, val=0):
 
 def find_seat(string):
     row = find_val(string[:7], 0, 127, 'F', 'B')
-    col = find_val(string[-3:], 0, 7, 'L', 'R')
+    col = find_val(string[-4:], 0, 7, 'L', 'R')
 
     return row, col
 
@@ -30,3 +30,5 @@ if __name__ == '__main__':
             max_id = row * 8 + col
 
     print(max_id)
+
+# CORRECT!
