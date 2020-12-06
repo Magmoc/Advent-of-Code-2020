@@ -12,11 +12,9 @@ if __name__ == '__main__':
 
     total = 0
     for group in answers:
-        set_list = []
-        intersect_set = {}
-        for person in group:
-            set_list.append(set(person))
-            intersect_set = set.intersection(*set_list)
+        set_list = [set(person) for person in group]
+
+        intersect_set = set.intersection(*set_list)
 
         total += len(intersect_set)
 
