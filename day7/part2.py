@@ -1,4 +1,4 @@
-from day7.read_input import read_input_file, invert_bag
+from day7.read_input import read_input_file
 
 bag_dict = read_input_file('input.txt')
 
@@ -18,3 +18,4 @@ def count_bags(sub_dict):
 if __name__ == '__main__':
     print(count_bags(bag_dict['shiny gold']))
 
+# CORRECT
