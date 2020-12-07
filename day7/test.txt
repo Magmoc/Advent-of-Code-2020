@@ -20,5 +20,6 @@ dull tomato bags contain 3 clear cyan bags, 5 dark turquoise bags, 4 light orang
 plaid tan bags contain 5 faded brown bags, 5 bright bronze bags.
 mirrored fuchsia bags contain 5 shiny brown bags, 3 dim magenta bags.
 wavy aqua bags contain 2 light beige bags, 3 vibrant white bags, 2 vibrant gold bags, 1 shiny gold bag.
-clear white bags contain 3 dim maroon bags, 4 vibrant brown bags, 1 shiny gold bag.
+clear white bags contain 3 dim maroon bags, 4 vibrant brown bags.
 clear indigo bags contain 1 shiny gold bag.
+shiny gold bags contain 1 clear white bag.

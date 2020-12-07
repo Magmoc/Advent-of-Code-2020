@@ -15,10 +15,6 @@ def check_bags(bag_list):
 
 
 if __name__ == '__main__':
-    print(bag_dict)
-    print(inv_bag)
-    print(inv_bag['shiny gold'])
-
     check_bags(inv_bag['shiny gold'])
     print(len(gold_bag_set))
 
