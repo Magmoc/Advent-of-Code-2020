@@ -592,4 +592,3 @@ light orange bags contain 4 light coral bags, 4 shiny indigo bags.
 mirrored salmon bags contain 5 vibrant violet bags, 1 drab purple bag, 5 dark cyan bags.
 posh green bags contain 1 light crimson bag, 3 vibrant cyan bags, 2 shiny brown bags, 2 vibrant magenta bags.
 muted gray bags contain 5 plaid chartreuse bags.
-
