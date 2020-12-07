@@ -1,36 +1,25 @@
 from day7.read_input import read_input_file, invert_bag
 
 bag_dict = read_input_file('input.txt')
+inv_bag = invert_bag(bag_dict)
+gold_bag_set = set()
 
 
-def check_bags(bag, val=0):
+def check_bags(bag_list):
     global bag_dict
 
-    for bag, value in bag.items():
-        # print(bag, value)
-        if isinstance(value, int):
-            if bag == 'shiny gold':
-                val += 1
-                break
-
-            if bag in bag_dict:
-                val = check_bags(bag_dict[bag], val)
-
-        if isinstance(value, dict):
-            val = check_bags(value, val)
-
-    return val
+    for bag in bag_list:
+        gold_bag_set.add(bag)
+        if bag in inv_bag:
+            check_bags(inv_bag[bag])
 
 
 if __name__ == '__main__':
     print(bag_dict)
-    inv_bag = invert_bag(bag_dict)
     print(inv_bag)
-    print(len(inv_bag))
-
     print(inv_bag['shiny gold'])
-    # bag_dict = read_input_file('test.txt')
-    # for key, value in bag_dict.items():
-    #     print(key, value)
-    # print("")
-    # print(check_bags(bag_dict))
+
+    check_bags(inv_bag['shiny gold'])
+    print(len(gold_bag_set))
+
+# CORRECT!

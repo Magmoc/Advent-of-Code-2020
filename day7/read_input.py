@@ -13,7 +13,7 @@ def read_input_file(file):
 
         for sub_elem in elem[1:]:
             if sub_elem == 'no other':
-                sub_dict = {'empty': 0}
+                sub_dict = {}
 
             else:
                 value, key = sub_elem.split(' ', 1)
