@@ -2,7 +2,6 @@ def find_weakness(inp_list, num_2_b_found):
     number = num_2_b_found
 
     for i in range(len(inp_list)):
-        sum_list_sum = 0
         for j in range(i, len(inp_list)):
             sum_list_sum = sum(inp_list[i:j])
             if sum_list_sum > number:
